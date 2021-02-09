@@ -10,9 +10,6 @@
   path: baseurl
   value: /lilypond-band-the-blue-hearts-linda-linda
 - command: update
-  path: url
-  value: https://jeandeaual.github.io
-- command: update
   path: repository
   value: jeandeaual/lilypond-band-the-blue-hearts-linda-linda
 - command: update

@@ -165,6 +165,7 @@ sectionI = {
 
 song = \relative c, {
   \numericTimeSignature
+  \override MultiMeasureRest.expand-limit = 3
 
   % Intro 1
   \tempo 4 = 63

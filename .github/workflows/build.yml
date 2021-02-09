@@ -38,8 +38,9 @@ jobs:
         uses: docker://jeandeaual/lilypond:devel-fonts-ly2video
         with:
           args: ffmpeg -i build/video/the-blue-hearts-linda-linda-bass.avi -c:v libx264 -pix_fmt yuv420p -movflags +faststart -c:a aac -b:a 128k -map_channel 0.1.1 -movflags +faststart build/video/the-blue-hearts-linda-linda-bass.mp4
-      - name: Remove extra MIDI files
+      - name: Remove extra files
         run: |
+          rm build/video/the-blue-hearts-linda-linda-bass.avi
           cp build/a4/*.midi build/midi/
           find . -depth -maxdepth 3 -regex '.*\/midi\/.*' -prune -o -type f -name '*.midi' -delete
       - name: Get short SHA

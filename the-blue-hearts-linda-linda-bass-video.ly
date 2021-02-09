@@ -3,7 +3,7 @@
 \include "the-blue-hearts-linda-linda-bass.ily"
 
 \score {
-  \keepWithTag #'video \staves
+  \unfoldRepeats \articulate \keepWithTag #'video \staves
   \layout {}
   \midi {}
 }
